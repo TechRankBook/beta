@@ -1,57 +1,70 @@
 import React from 'react';
 import { Box, Button, Typography, Grid } from '@mui/material';
 
-// Sample data with company names, logos, and interview dates
+// Sample data with 12 companies for two rows with 6 buttons each
 const companies = [
-  { name: 'Nokia', logo: '/path/to/nokia-logo.png', date: 'Nov 15' },
-  { name: 'Infosys', logo: '/path/to/infosys-logo.png', date: 'Nov 20' },
-  { name: 'Wipro', logo: '/path/to/wipro-logo.png', date: 'Nov 25' },
-  { name: 'Google', logo: '/path/to/google-logo.png', date: 'Dec 1' },
-  { name: 'SBI', logo: '/path/to/sbi-logo.png', date: 'Dec 5' },
-  { name: 'Nestle', logo: '/path/to/nestle-logo.png', date: 'Dec 10' },
-  { name: 'Meta', logo: '/path/to/meta-logo.png', date: 'Dec 15' },
-  { name: 'Amazon', logo: '/path/to/amazon-logo.png', date: 'Dec 20' },
-  { name: 'Apple', logo: '/path/to/apple-logo.png', date: 'Dec 25' },
-  { name: 'Tata', logo: '/path/to/tata-logo.png', date: 'Jan 1' },
-  { name: 'Samsung', logo: '/path/to/samsung-logo.png', date: 'Jan 5' },
+  { name: 'Nokia', image: process.env.PUBLIC_URL + '/Assets/nokia.png', date: '17 - Aug - 2024', jobType: 'Full-Time' },
+  { name: 'Infosys', image: process.env.PUBLIC_URL + '/Assets/infosys.png', date: '17 - Aug - 2024', jobType: 'Internship' },
+  { name: 'Wipro', image: process.env.PUBLIC_URL + '/Assets/wipro.png', date: '17 - Aug - 2024', jobType: 'Part-Time' },
+  { name: 'Google', image: process.env.PUBLIC_URL + '/Assets/google.png', date: '17 - Aug - 2024', jobType: 'Full-Time' },
+  { name: 'Microsoft', image: process.env.PUBLIC_URL + '/Assets/tata.png', date: '18 - Aug - 2024', jobType: 'Full-Time' },
+  { name: 'Amazon', image: process.env.PUBLIC_URL + '/Assets/amazon.png', date: '19 - Aug - 2024', jobType: 'Part-Time' },
+  { name: 'Facebook', image: process.env.PUBLIC_URL + '/Assets/meta.png', date: '20 - Aug - 2024', jobType: 'Internship' },
+  { name: 'Apple', image: process.env.PUBLIC_URL + '/Assets/apple.png', date: '21 - Aug - 2024', jobType: 'Full-Time' },
+  { name: 'Samsung', image: process.env.PUBLIC_URL + '/Assets/ssamsung.png', date: '22 - Aug - 2024', jobType: 'Full-Time' },
+  { name: 'IBM', image: process.env.PUBLIC_URL + '/Assets/sbi.png', date: '23 - Aug - 2024', jobType: 'Internship' },
+  { name: 'Dell', image: process.env.PUBLIC_URL + '/Assets/tata.png', date: '24 - Aug - 2024', jobType: 'Part-Time' },
+  { name: 'Tesla', image: process.env.PUBLIC_URL + '/Assets/meta.png', date: '25 - Aug - 2024', jobType: 'Full-Time' },
 ];
 
 function Section1() {
   return (
     <Box sx={{ p: 3, textAlign: 'center' }}>
-      <Typography variant="h4" gutterBottom>
-        Upcoming Interviews
+      <Typography variant="h4" gutterBottom sx={{ color: '#8A2BE2', fontWeight: 'bold' }}>
+        UPCOMING INTERVIEWS
       </Typography>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={3} justifyContent="center">
         {companies.map((company, index) => (
-          <Grid item xs={6} sm={4} md={2} key={company.name}>
+          <Grid item xs={6} sm={4} md={2} lg={2} key={company.name}>
             <Button
-              variant="outlined" // Using outlined button for a neutral style
+              variant="outlined"
               sx={{
-                borderRadius: '20px',
-                padding: 1,
+                borderRadius: '10px',
+                padding: '0px',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 width: '100%',
-                borderColor: 'black', // Custom border color
+                borderColor: '#000',
+                borderWidth: '2px',
                 '&:hover': {
-                  borderColor: '#357ABD', // Darker border on hover
-                  backgroundColor: '#f0f0f0', // Light grey background on hover
+                  borderColor: '#8A2BE2',
+                  backgroundColor: '#f7f7f7',
                 },
               }}
             >
+              {/* Centered Company Image */}
               <img
-                src={company.logo}
+                src={company.image}
                 alt={`${company.name} logo`}
-                style={{ width: '30px', height: '30px', marginBottom: '8px' }}
+                style={{
+                  width: '90px', // Adjusted image size
+                  height: '70px',
+                  objectFit: 'contain',
+                  borderRadius: '6px',
+                  marginBottom: '-10px',
+                  marginTop: '-10px',
+                }}
               />
-              {/* <Typography variant="body2" color="inherit">
-                {company.name}
-              </Typography> */}
-              <Typography variant="caption" color="black">
-                {company.date}
-              </Typography>
+
+              {/* Date only */}
+              <Grid container alignItems="center" justifyContent="center" sx={{ width: '100%' }}>
+                <Grid item>
+                  <Typography variant="caption" sx={{ color: '#555' }}>
+                    Date: {company.date}
+                  </Typography>
+                </Grid>
+              </Grid>
             </Button>
           </Grid>
         ))}

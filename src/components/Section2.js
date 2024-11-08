@@ -6,17 +6,17 @@ const cardData = [
   {
     title: 'Candidate',
     description: 'Login to apply for jobs and attend interviews.',
-    img: '/path/to/candidate-image.jpg', // Replace with actual image paths
+    img: process.env.PUBLIC_URL + '/Assets/students.png', // Replace with actual image paths
   },
   {
     title: 'Corporate Employee',
     description: 'Login to access employee tools and updates.',
-    img: '/path/to/corporate-image.jpg', // Replace with actual image paths
+    img: process.env.PUBLIC_URL + '/Assets/corporate.png', // Replace with actual image paths
   },
   {
     title: 'College',
     description: 'Login to access campus placement details and more.',
-    img: '/path/to/college-image.jpg', // Replace with actual image paths
+    img: process.env.PUBLIC_URL + '/Assets/college.png', // Replace with actual image paths
   },
 ];
 
@@ -37,16 +37,18 @@ function Section2() {
                 borderRadius: 5,
                 border: '1px black', // Border color set to black
                 boxShadow: 6,
-
-                // '&:hover': {
-                //   boxShadow: 6, // Optional: Adding shadow on hover for more interactivity
-                // },
               }}
             >
               <img
                 src={card.img}
                 alt={card.title}
-                style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                style={{
+                  width: '95%',
+                  height: '350px',
+                  objectFit: 'cover',
+                  borderRadius: '15%', // Makes the image rounded
+                  margin: '16px auto', // Adds margin around the image
+                }}
               />
               <CardContent sx={{ flexGrow: 1 }}>
                 <Typography variant="h6">{card.title}</Typography>

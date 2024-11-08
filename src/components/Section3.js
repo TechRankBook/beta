@@ -6,17 +6,17 @@ const cardData = [
   {
     name: 'John Doe',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    img: '/path/to/john-doe-image.jpg', // Replace with actual image paths
+    img: process.env.PUBLIC_URL + '/Assets/student.png', // Replace with actual image paths
   },
   {
     name: 'Jane Smith',
     description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    img: '/path/to/jane-smith-image.jpg', // Replace with actual image paths
+    img: process.env.PUBLIC_URL + '/Assets/HR.png', // Replace with actual image paths
   },
   {
     name: 'Mike Johnson',
     description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    img: '/path/to/mike-johnson-image.jpg', // Replace with actual image paths
+    img: process.env.PUBLIC_URL + '/Assets/principal.png',// Replace with actual image paths
   },
 ];
 
@@ -44,9 +44,10 @@ function Section3() {
                 alt={card.name}
                 style={{
                   width: '100%',
-                  height: '200px',
+                  height: '250px',
                   objectFit: 'cover',
-                  borderRadius: '15px', // Rounded corners for the image
+                  borderRadius: '25px', // Rounded corners for the image
+    
                   marginBottom: '16px', // Space between image and description
                 }}
               />
