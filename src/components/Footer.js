@@ -82,6 +82,14 @@ function Footer() {
               <Link href="/interviews" sx={{ display: 'block' }}>
                 Interview
               </Link>
+              <Link href="/interviews" sx={{ display: 'block' }}>
+                Interview
+              </Link><Link href="/vishu" sx={{ display: 'block' }}>
+                vishu
+              </Link>
+              <Link href="/nisarga" sx={{ display: 'block' }}>
+               nisarga
+              </Link>
             </Box>
           </Box>
         </Grid>
