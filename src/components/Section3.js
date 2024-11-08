@@ -35,7 +35,7 @@ function Section3() {
                 flexDirection: 'column',
                 height: '100%',
                 boxShadow: 0, // No borders or shadow
-                padding: 2, // Padding for the card content
+                padding: 8, // Padding for the card content
                 textAlign: 'center', // Center align text
               }}
             >
@@ -44,7 +44,7 @@ function Section3() {
                 alt={card.name}
                 style={{
                   width: '100%',
-                  height: '250px',
+                  height: '300px',
                   objectFit: 'cover',
                   borderRadius: '25px', // Rounded corners for the image
     
