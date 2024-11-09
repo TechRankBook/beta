@@ -8,11 +8,11 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 // Sample social media links
 const socialLinks = {
-  instagram: "https://www.instagram.com",
-  facebook: "https://www.facebook.com",
-  twitter: "https://twitter.com",
-  youtube: "https://www.youtube.com",
-  whatsapp: "https://wa.me/yourphonenumber", // Replace with your WhatsApp number link
+  instagram: "https://www.instagram.com/rank_book.in?igsh=ZDJybXVzd25iMm1q&utm_source=qr",
+  facebook: "https://www.facebook.com/profile.php?id=61564314301321&mibextid=ZbWKwL",
+  twitter: "https://x.com/RankBook1?t=tC09wynX6jAnj57RrI_hZQ&s=08",
+  youtube: "https://www.youtube.com/@RankBookIndia",
+  whatsapp: "https://wa.me/+916363688572", // Replace with your WhatsApp number link
 };
 
 function Footer() {
@@ -32,7 +32,7 @@ function Footer() {
               variant="h6"
               sx={{
                 marginTop: -5,
-                color: "#3f51b5", // Optional: Use a material color that matches the blue of Facebook or Instagram icons
+                color: "#3f51b5",
               }}
             >
               Connect Us
@@ -45,14 +45,14 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
-                  color: "#E4405F", // Instagram Pink color
-                  fontSize: 45, // Set icon size to 45
-                  borderRadius: "50%", // Round the button
-                  padding: 1, // Set padding to 1 for larger clickable area
-                  margin: 1, // Space between buttons
+                  color: "#E4405F",
+                  fontSize: 45,
+                  borderRadius: "50%",
+                  padding: 1,
+                  margin: 1,
                 }}
               >
-                <InstagramIcon sx={{ fontSize: "inherit" }} /> {/* Inherit font size from IconButton */}
+                <InstagramIcon sx={{ fontSize: "inherit" }} />
               </IconButton>
               <IconButton
                 component="a"
@@ -60,11 +60,11 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
-                  color: "#1877F2", // Facebook Blue color
-                  fontSize: 45, // Set icon size to 45
-                  borderRadius: "50%", // Round the button
-                  padding: 1, // Set padding to 1
-                  margin: 1, // Space between buttons
+                  color: "#1877F2",
+                  fontSize: 45,
+                  borderRadius: "50%",
+                  padding: 1,
+                  margin: 1,
                 }}
               >
                 <FacebookIcon sx={{ fontSize: "inherit" }} />
@@ -75,11 +75,11 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
-                  color: "#1DA1F2", // Twitter Blue color
-                  fontSize: 45, // Set icon size to 45
-                  borderRadius: "50%", // Round the button
-                  padding: 1, // Set padding to 1
-                  margin: 1, // Space between buttons
+                  color: "#1DA1F2",
+                  fontSize: 45,
+                  borderRadius: "50%",
+                  padding: 1,
+                  margin: 1,
                 }}
               >
                 <TwitterIcon sx={{ fontSize: "inherit" }} />
@@ -90,11 +90,11 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
-                  color: "#FF0000", // YouTube Red color
-                  fontSize: 45, // Set icon size to 45
-                  borderRadius: "50%", // Round the button
-                  padding: 1, // Set padding to 1
-                  margin: 1, // Space between buttons
+                  color: "#FF0000",
+                  fontSize: 45,
+                  borderRadius: "50%",
+                  padding: 1,
+                  margin: 1,
                 }}
               >
                 <YouTubeIcon sx={{ fontSize: "inherit" }} />
@@ -105,11 +105,11 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
-                  color: "#25D366", // WhatsApp Green color
-                  fontSize: 45, // Set icon size to 45
-                  borderRadius: "50%", // Round the button
-                  padding: 1, // Set padding to 1
-                  margin: 1, // Space between buttons
+                  color: "#25D366",
+                  fontSize: 45,
+                  borderRadius: "50%",
+                  padding: 1,
+                  margin: 1,
                 }}
               >
                 <WhatsAppIcon sx={{ fontSize: "inherit" }} />
@@ -128,7 +128,7 @@ function Footer() {
                 sx={{
                   display: "block",
                   marginBottom: 1,
-                  textDecoration: "none", // Remove underline from links
+                  textDecoration: "none",
                 }}
               >
                 SkillGrad
@@ -138,7 +138,7 @@ function Footer() {
                 sx={{
                   display: "block",
                   marginBottom: 1,
-                  textDecoration: "none", // Remove underline from links
+                  textDecoration: "none",
                 }}
               >
                 ReadyGrad
@@ -148,7 +148,7 @@ function Footer() {
                 sx={{
                   display: "block",
                   marginBottom: 1,
-                  textDecoration: "none", // Remove underline from links
+                  textDecoration: "none",
                 }}
               >
                 NeoGrad
@@ -158,7 +158,7 @@ function Footer() {
                 sx={{
                   display: "block",
                   marginBottom: 1,
-                  textDecoration: "none", // Remove underline from links
+                  textDecoration: "none",
                 }}
               >
                 HireDon
@@ -168,7 +168,7 @@ function Footer() {
                 sx={{
                   display: "block",
                   marginBottom: 1,
-                  textDecoration: "none", // Remove underline from links
+                  textDecoration: "none",
                 }}
               >
                 BossBox
@@ -178,7 +178,7 @@ function Footer() {
                 sx={{
                   display: "block",
                   marginBottom: 1,
-                  textDecoration: "none", // Remove underline from links
+                  textDecoration: "none",
                 }}
               >
                 WiseDean
@@ -190,19 +190,69 @@ function Footer() {
         {/* Right Section */}
         <Grid item xs={12} sm={4}>
           <Box sx={{ textAlign: "center" }}>
-            <Typography variant="h6">About Us</Typography>
-            <Typography
-              variant="body1"
-              sx={{ marginTop: 2, textAlign: "justify" }}
-            >
-              We are dedicated to empowering individuals and businesses through
-              innovative solutions designed to foster growth and development. Our
-              platform provides access to a wide range of services, from career
-              guidance to skill enhancement, ensuring everyone can reach their
-              full potential. With a commitment to quality and excellence, we
-              strive to make a positive impact in our community and beyond. Join
-              us on this journey toward a brighter future.
-            </Typography>
+            <Typography variant="h6">Company</Typography>
+            <Box sx={{ marginTop: 2 }}>
+              <Link
+                href="/about"
+                sx={{
+                  display: "block",
+                  marginBottom: 1,
+                  textDecoration: "none",
+                }}
+              >
+                About
+              </Link>
+              <Link
+                href="/careers"
+                sx={{
+                  display: "block",
+                  marginBottom: 1,
+                  textDecoration: "none",
+                }}
+              >
+                Careers
+              </Link>
+              <Link
+                href="/support"
+                sx={{
+                  display: "block",
+                  marginBottom: 1,
+                  textDecoration: "none",
+                }}
+              >
+                Support
+              </Link>
+              <Link
+                href="/terms"
+                sx={{
+                  display: "block",
+                  marginBottom: 1,
+                  textDecoration: "none",
+                }}
+              >
+                Terms
+              </Link>
+              <Link
+                href="/privacy-policy"
+                sx={{
+                  display: "block",
+                  marginBottom: 1,
+                  textDecoration: "none",
+                }}
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/feedback"
+                sx={{
+                  display: "block",
+                  marginBottom: 1,
+                  textDecoration: "none",
+                }}
+              >
+                Feedback
+              </Link>
+            </Box>
           </Box>
         </Grid>
       </Grid>
